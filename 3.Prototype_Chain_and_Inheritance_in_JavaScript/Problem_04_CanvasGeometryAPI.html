@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+<form>
+    X: <input type="text" name="X">
+    Y: <input type="text" name="Y">
+    Color: <input type="color" name="color">
+    <br>
+    Shape:
+    <select id="shape">
+        <option name="circle">Circle</option>
+        <option name="triangle">Triangle</option>
+        <option name="rectangle">Rectangle</option>
+        <option name="line">Line</option>
+        <option name="segment">Segment</option>
+    </select>
+    <br>
+    X2: <input type="text" name="X2">
+    Y2: <input type="text" name="Y2">
+    <br>
+    X3: <input type="text" name="X3">
+    Y3: <input type="text" name="Y3">
+    <br>
+    Width: <input type="text" name="width">
+    Height: <input type="text" name="height">
+    Radius: <input type="text" name="radius">
+    <br>
+    <br>
+    <select multiple id="shapes" style="width: 500px; height: 150px;">
+    </select> <input type="button" value="-" onclick="removeShape()">
+    <br>
+    <input type="button" value="Add" onclick="addShape()">
+</form>
+    <canvas id="myCanvas" width="578" height="200"></canvas>
+    <script src="Problem_04_CanvasGeometryAPI.js"></script>
+</body>
+</html>
